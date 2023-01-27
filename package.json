@@ -2,7 +2,6 @@
   "name": "poke-api-front",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build-js": "tsc",
     "build-js:dev": "npm run build-js -- -w",
