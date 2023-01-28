@@ -7,7 +7,9 @@
     "build-js:dev": "npm run build-js -- -w",
     "test": "jest",
     "test:dev": "npm test -- --watchAll",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build-styles": "npx sass src/sass/styles.scss public/css/styles.css",
+    "build-styles-watch": "npx sass src/sass/styles.scss public/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
