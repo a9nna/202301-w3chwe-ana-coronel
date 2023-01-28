@@ -3,7 +3,6 @@
 ::after {
   box-sizing: border-box;
 } /*utilizamos el selector universal ya que no se hereda la propiedad. Si queremos que alguno cumpla content-box, lo especificamos.*/
-
 a,
 a:focus,
 a:active,
@@ -17,3 +16,5 @@ ul {
   padding-left: 0;
   margin: 0;
 }
+
+/*# sourceMappingURL=styles.css.map */
