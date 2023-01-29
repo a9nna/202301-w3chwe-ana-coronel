@@ -4,6 +4,7 @@ import type { PokemonsData, PokemonsList } from "../types.js";
 
 export class CardsListComponent extends Component {
   public pokemonsData: PokemonsData[];
+
   private readonly url: string;
   private pokemonsList: PokemonsList;
 
@@ -15,6 +16,7 @@ export class CardsListComponent extends Component {
   ) {
     super(parentElement, className, tagName);
     this.url = url;
+
     (async () => this.getAllPokemons(url))();
   }
 
@@ -44,7 +46,7 @@ export class CardsListComponent extends Component {
           pokemon,
           position,
           this.url,
-          "pokemon-card_name"
+          "pokemon-card_data"
         );
         await pokemonCardComponent.render();
       });
