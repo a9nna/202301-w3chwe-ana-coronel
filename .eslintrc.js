@@ -15,6 +15,7 @@ module.exports = {
         ],
         "@typescript-eslint/indent": "off",
         "@typescript-eslint/no-empty-function": "off",
+        "max-params": ["error", 6],
       },
     },
   ],
