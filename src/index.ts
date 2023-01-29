@@ -1,14 +1,18 @@
+import { ButtonNextPage } from "./components/ButtonNextPage/ButtonNextPage.js";
 import { CardsListComponent } from "./components/CardsListComponent/CardsListComponent.js";
 import { HeaderComponent } from "./components/HeaderComponent/HeaderComponent.js";
 
-const pokemonApiUrl = "https://pokeapi.co/api/v2/pokemon/";
+export const pokemonApiUrl = "https://pokeapi.co/api/v2/pokemon/";
 
-const rootElement: HTMLElement = document.querySelector(".root");
+export const rootElement: HTMLElement = document.querySelector(".root");
 const headerComponent = new HeaderComponent(rootElement, "header");
 headerComponent.render();
 
-const cardsListComponent = new CardsListComponent(
-  headerComponent.domElement,
+const buttonNext = new ButtonNextPage(rootElement, pokemonApiUrl, "button");
+await buttonNext.render();
+
+export const cardsListComponent = new CardsListComponent(
+  rootElement,
   pokemonApiUrl,
   "card-list",
   "ul"
