@@ -4,6 +4,11 @@ export interface ComponentStructure {
   addListeners?: () => void;
 }
 
+export interface ButtonStructure {
+  anchorElement: HTMLAnchorElement;
+  render: () => void;
+}
+
 export interface PokemonsData {
   name: string;
   url: string;
@@ -17,6 +22,18 @@ export interface PokemonsList {
 }
 
 export interface PokemonsInfo {
+  abilities: [
+    {
+      ability: {
+        name: string;
+      };
+    },
+    {
+      ability: {
+        name: string;
+      };
+    }
+  ];
   id: number;
   name: string;
   sprites: {
@@ -24,5 +41,37 @@ export interface PokemonsInfo {
       "official-artwork": { front_default: string };
     };
   };
+  stats: [
+    {
+      stat: {
+        name: string;
+      };
+    },
+    {
+      stat: {
+        name: string;
+      };
+    },
+    {
+      stat: {
+        name: string;
+      };
+    },
+    {
+      stat: {
+        name: string;
+      };
+    },
+    {
+      stat: {
+        name: string;
+      };
+    },
+    {
+      stat: {
+        name: string;
+      };
+    }
+  ];
   types: [{ type: { name: string } }, { type: { name: string } }];
 }
